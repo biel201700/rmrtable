@@ -433,7 +433,6 @@ export default {
         list2[i].style.background = "white";
       }
     }
-
     // list[] 1번에 coefficient 값 담기
     this.list[1] = Number(this.coefficient);
 
@@ -461,6 +460,7 @@ export default {
     }
     // list[] 3번에 joint_spacing 값 담기
     this.list[2] = Number(this.joint_spacing);
+    
     var sum = 0;
     for(var i=0; i< this.list.length; i++){
      sum += this.list[i]
@@ -485,6 +485,7 @@ export default {
     }
     // list[] 4번에 joint_length 값 담기
     this.list[3] = Number(this.joint_length);
+    
     var sum = 0;
     for(var i=0; i< this.list.length; i++){
      sum += this.list[i]
@@ -509,6 +510,7 @@ export default {
     }
     // list[] 5번에 joint_gap 값 담기
     this.list[4] = Number(this.joint_gap);
+    
     var sum = 0;
     for(var i=0; i< this.list.length; i++){
      sum += this.list[i]
@@ -536,6 +538,7 @@ export default {
      // list[] 6번에 asperity 값 담기
      if(this.asperity == 1){
       this.list[5] = Number(this.asperity) +1;
+      
       var sum = 0;
       for(var i=0; i< this.list.length; i++){
        sum += this.list[i]
@@ -544,6 +547,7 @@ export default {
      this.sum = sum;
    }else {
     this.list[5] = Number(this.asperity);
+    
     var sum = 0;
     for(var i=0; i< this.list.length; i++){
      sum += this.list[i]
@@ -569,6 +573,7 @@ filling: function(){
     }
     // list[] 7번에 filling 값 담기
     this.list[6] = Number(this.filling);
+    
     var sum = 0;
     for(var i=0; i< this.list.length; i++){
      sum += this.list[i]
@@ -593,6 +598,7 @@ filling: function(){
     }
     // list[] 8번에 weathering_degree 값 담기
     this.list[7] = Number(this.weathering_degree);
+    
     var sum = 0;
     for(var i=0; i< this.list.length; i++){
      sum += this.list[i]

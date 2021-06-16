@@ -1,0 +1,160 @@
+body{
+	background: #2c3e50;
+}
+h1{
+	color: rgb(173, 196, 212);
+	transition: color.5s ease-in-out;
+}
+h4{
+	color: rgb(173, 196, 212);
+	font-style: italic;
+}
+input{
+	width: 100%;
+	height: 50px;
+	border: none;
+	border-bottom: solid 5px rgb(173, 196, 212);
+	background-color: transparent;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 40px;
+}
+::placeholder{
+	color: white;
+}
+:focus{
+	outline: none;
+}
+
+li{
+	color: white;
+	list-style: none;
+	text-align: center;
+}
+.js-clock{
+	font-size: 45px;
+	text-align: center;
+	position: absolute;
+	right: 35%;
+	top: 20%
+}
+.clicked{
+	color: #7f8c8d;
+}
+.form,
+.greetings{
+	display: none;
+	text-align: center;
+}
+.js-toDoForm{
+	text-align: center;
+	position: absolute;
+	top: 60%;
+	right: 35%;
+}
+.js-nameForm >input{
+	color:  white;
+}
+.js-toDoForm > input {
+	color:  white;
+}
+.showing{
+	display: block;
+	font-size: 35px;
+	position: absolute;
+    top: 50%;
+    right: 35%;
+}
+.showing2{
+	display: block;
+	font-size: 35px;
+	position: absolute;
+    top: 50%;
+    right: 41%;
+}
+/*0에서 1초동안 불투명도 주기*/
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.bgImage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	animation: fadeIn.5s linear;
+}
+#right_change_button{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: rgb(173, 196, 212);
+    font-size: 105px;
+    position: absolute;
+    top:  60%;
+	right: 20px;
+}
+#left_change_button{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: rgb(173, 196, 212);
+    font-size: 105px;
+    position: absolute;
+    top:  60%;
+    left: 20px;
+}
+.js-weather{
+	position:  absolute;
+	top: 5%;
+	right: 8%;
+	color: rgb(173, 196, 212);
+	font-size:  30px;
+	font-weight:  bold;
+}
+.js-place{
+	position:  absolute;
+	top: 10%;
+	right: 4%;
+	color: rgb(173, 196, 212);
+	font-size:  30px;
+	font-weight:  bold;
+}
+.js-todoList{
+	height: 180px;
+	top: 70%;
+	overflow: auto;
+	position: absolute;
+	right: 33%;
+	width: 350px;
+}
+.js-todoList > li{
+	font-size: 30px;
+	width: 100%;
+}
+.js-todoList > li >button{
+	background-color: Transparent;
+	border: 0px;
+	font-size: 30px;
+}
+.li_line{
+	text-decoration: line-through;
+	text-decoration-color: black;
+}
+.weather_image{
+	margin-left: 10px;
+}
